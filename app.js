@@ -49,3 +49,22 @@ function getAllPosts() {
 
 addPost(getAllPosts);
 // getAllPosts();
+// function addPost(callback) {
+   
+//         posts.push({"title": "Title 3", "body": "Body 3"});
+//         callback();
+   
+// }
+
+// function getAllPosts() {
+    
+//         let output = "<ul>";
+//         posts.forEach(function (post) {
+//             output += `<li>${post.title}- ${post.body}</li>`;
+//         })
+//         output += "</ul>";
+//         document.getElementById("output").innerHTML = output
+
+// };
+
+// addPost(getAllPosts);
