@@ -29,9 +29,10 @@ let posts = [
     }
 ];
 
-function addPost() {
+function addPost(callback) {
     setTimeout(function (){
         posts.push({"title": "Title 3", "body": "Body 3"});
+        callback();
     }, 3000);
 }
 
@@ -43,8 +44,8 @@ function getAllPosts() {
         })
         output += "</ul>";
         document.getElementById("output").innerHTML = output
-    }, 4000);
+    }, 2000);
 }
 
-addPost();
-getAllPosts();
+addPost(getAllPosts);
+// getAllPosts();
